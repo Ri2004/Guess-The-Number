@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Guess The Number">
+    <meta property="og:title" content="Guess The Number">
+    <meta property="og:image" content="D:\drive e\HTML-CSS Files\Guess-The-Number\Number-Guess.ico">
+    <title>Guess The Number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./Number-Guess.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css" />
+    
+  </head>
+  <body class="bg-orange-500">
+    <!-- Header starts -->
+    <header>
+      <!-- Heading -->
+      <h1
+        class="flex justify-center my-6 mx-6 text-white text-lg text-center -tracking-tighter font-sans font-extrabold md:text-5xl md:my-10"
+      >
+        WELCOME TO NUMBER GUESSING GAME!
+      </h1>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main section starts -->
+    <main>
+      <section class="flex justify-center">
+        <div
+          class="flex flex-col justify-center space-y-6 h-[420px] w-64 bg-white border-black border-b-4 border-t-2 border-l-2 border-r-2 md:border-b-8 md:border-t-4 md:border-l-4 md:border-r-4 rounded-xl -tracking-wide md:h-[450px] md:w-[550px]"
+        >
+          <!-- Prompt for user -->
+          <p
+            class="font-extrabold text-black text-xl text-center md:text-2xl md:py-5"
+          >
+            GUESS A NUMBER (BETWEEN 1 AND 20)
+          </p>
+
+          <!-- Inner div starts -->
+          <div
+            class="flex justify-center mx-auto h-14 w-24 bg-white border-black border-b-8 border-t-4 border-l-4 border-r-4 rounded-lg md:h-20"
+          >
+            <!-- Guessed number -->
+            <p class="text-3xl py-1 md:py-3 md:text-5xl font-semibold number">?</p>
+          </div>
+          <!-- Inner div ends -->
+
+          <!-- Input box starts -->
+          <div class="mx-12 h-8 w-10 my-3 md:mx-40 md:h-16 md:w-28">
+            <form action="#">
+              <label for="number"></label>
+              <input
+                type="text"
+                name="number"
+                placeholder="Guess a Number"
+                class="max-w-fit py-1 border-black border-b-8 border-t-4 border-l-4 border-r-4 text-lg font-bold text-center rounded-xl md:px-2 md:py-3 md:text-2xl guess"
+              />
+            </form>
+          </div>
+          <!-- Input box ends -->
+
+          <div class="mx-auto mt-2">
+            <p class="text-base font-extrabold md:text-xl message">Start Guessing!!</p>
+          </div>
+
+          <!-- Check button starts -->
+          <div class="mx-20 w-16 md:pb-8 md:mx-52 md:w-32">
+            <button
+              class="bg-orange-500 text-lg font-extrabold px-6 py-1 border-black border-b-4 border-t-2 border-l-2 border-r-2 rounded-lg hover:bg-orange-200 md:px-8 md:h-14 md:w-36 md:text-3xl md:border-b-8 md:border-t-4 md:border-l-4 md:border-r-4 btn check"
+            >
+              Guess
+            </button>
+          </div>
+          <!-- Check button ends -->
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="flex justify-around h-16 w-64 my-5 mx-auto bg-white border-black border-b-4 border-t-2 border-l-2 border-r-2 md:border-b-8 md:border-t-4 md:border-l-4 md:border-r-4 rounded-xl -tracking-wide md:h-24 md:w-[550px]"
+        >
+          <div class="py-2 px-2 flex flex-col w-1/2 md:px-3 md:py-3">
+            <p class="text-sm font-extrabold md:text-2xl">
+              💯 Attempts: <span class="score">20</span>
+            </p>
+            <p class="text-sm font-extrabold md:text-2xl">
+              🥇 HighScore: <span class="highscore">0</span>
+            </p>
+          </div>
+
+          <div class="h-full w-1/2 py-2 pl-6 md:py-4 md:pl-24">
+            <button
+              class="bg-orange-500 text-lg font-extrabold px-6 py-1 border-black border-b-4 border-t-2 border-l-2 border-r-2 rounded-lg hover:bg-orange-200 md:px-8 md:h-14 md:w-36 md:text-3xl md:border-b-8 md:border-t-4 md:border-l-4 md:border-r-4 again btn again"
+            >
+              Again
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Main section ends -->
+    <!-- <script src="./index.js"></script> -->
+    <script src="./script.js"></script>
+  </body>
+</html>
